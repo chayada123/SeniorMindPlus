@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeniorMind+ - เกี่ยวกับเรา</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFF7E3;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .blue-text {
+            color: #5FC3DB;
+        }
+        .pink-text {
+            color: #FF99CC;
+        }
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: gray;
+            font-weight: normal;
+            transition: color 0.3s;
+        }
+        .nav-links a.active,
+        .nav-links a:hover {
+            color: #5FC3DB;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1100px;
+            margin: auto;
+            text-align: left;
+        }
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #5FC3DB;
+            margin-bottom: 20px;
+        }
+        .about-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 20px;
+            line-height: 1.8;
+            text-align: center;
+        }
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .contact-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 20px;
+            line-height: 0.8;
+            width: 48%;
+            box-sizing: border-box;
+        }
+        .email {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .logo {
+                margin-bottom: 10px;
+            }
+            .nav-links {
+                display: flex;
+                gap: 10px;
+            }
+            .highlight {
+                font-size: 32px;
+            }
+            .description {
+                font-size: 18px;
+            }
+            .contact-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .contact-box {
+                width: 100%;
+                margin-bottom: 20px;
+                line-height: 1.1;
+            }
+        }
+        @media (max-width: 480px) {
+            .highlight {
+                font-size: 28px;
+            }
+            .description {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="SeniorMind+ Logo">
+            <span class="blue-text">Senior</span><span class="pink-text">Mind+</span>
+        </div>
+        <nav class="nav-links">
+            <a href="home.html">หน้าหลัก</a>
+            <a href="about.html" class="active">เกี่ยวกับเรา</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h1 class="title">เกี่ยวกับเรา</h1>
+        <div class="about-box">
+            เราเชื่อว่า <b>“การรักษาความสมบูรณ์ของจิตใจ และการพัฒนาทักษะการรู้คิด เป็นสิ่งสำคัญสำหรับผู้สูงอายุ 
+            เพื่อให้สามารถมีชีวิตที่มีคุณภาพ และสุขภาพจิตที่ดีในทุกช่วงวัย”</b> ด้วยเหตุนี้ เราจึงพัฒนา <b>แอปพลิเคชัน</b>นี้ขึ้นมา 
+            เพื่อส่งเสริมการเรียนรู้ และการพัฒนาทักษะสมองผ่าน <b>เทคโนโลยีความจริงเสมือน (VR)</b> 
+            และการฝึกทักษะต่าง ๆ ที่เข้าใจง่าย เหมาะสมกับผู้สูงอายุ
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-box">
+                <p><b>ผู้จัดทำ :</b></p>
+                <p>นายธนบัตร อากรนิธิ์</p>
+                <p>มหาวิทยาลัยบูรพา คณะวิศวกรรมศาสตร์</p>
+                <p>สาขาวิศวกรรมระบบสมองกลฝังตัว และอิเล็กทรอนิกส์สื่อสาร</p>
+                <p><b>ติดต่อ :</b></p>
+                <a href="mailto:thanabut0941@gmail.com" class="email">
+                    📧 thanabut094@gmail.com
+                </a></p>
+            </div>
+            <div class="contact-box">
+                <p><b>ผู้จัดทำ :</b></p>
+                <p>นางสาวชญาดา ญาณพาณิชย์</p>
+                <p>มหาวิทยาลัยบูรพา คณะวิศวกรรมศาสตร์</p>
+                <p>สาขาวิศวกรรมระบบสมองกลฝังตัว และอิเล็กทรอนิกส์สื่อสาร</p>
+                <p><b>ติดต่อ :</b></p>
+                <a href="mailto:chayadagena123@gmail.com" class="email">
+                    📧 chayadagena123@gmail.com
+                </a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
